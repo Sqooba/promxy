@@ -1,7 +1,7 @@
 #!groovy
-@Library("jenkinsfile-lib@test") _
+@Library("jenkinsfile-lib") _
 
-dockerBuildPush {
+dockerBuildPipeline {
     imageName = "sqooba/promxy"
-    tags = ["1.0.0"]
+    tags = ["0.0.31"]
 }
